@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Castle Revival Ventures</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#0f0f0f;
+      color:#f5f5f5;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.75)
+      ),
+      url('https://images.unsplash.com/photo-1520637836862-4d197d17c93a?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero-content{
+      max-width:900px;
+    }
+
+    .eyebrow{
+      letter-spacing:4px;
+      text-transform:uppercase;
+      font-size:12px;
+      margin-bottom:20px;
+      color:#d4af37;
+    }
+
+    h1{
+      font-family:'Cormorant Garamond',serif;
+      font-size:84px;
+      line-height:1;
+      margin-bottom:24px;
+      font-weight:600;
+    }
+
+    .hero p{
+      font-size:20px;
+      line-height:1.8;
+      color:#d6d6d6;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:16px 36px;
+      background:#d4af37;
+      color:#111;
+      border-radius:999px;
+      font-weight:600;
+      transition:0.3s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      background:#e8c252;
+    }
+
+    section{
+      padding:120px 10%;
+    }
+
+    .section-title{
+      font-family:'Cormorant Garamond',serif;
+      font-size:56px;
+      margin-bottom:20px;
+    }
+
+    .section-subtitle{
+      color:#b8b8b8;
+      font-size:18px;
+      line-height:1.8;
+      max-width:800px;
+      margin-bottom:70px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#171717;
+      padding:40px;
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:24px;
+      transition:0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(212,175,55,0.3);
+    }
+
+    .card h3{
+      font-family:'Cormorant Garamond',serif;
+      font-size:34px;
+      margin-bottom:18px;
+      color:#d4af37;
+    }
+
+    .card p{
+      color:#cfcfcf;
+      line-height:1.8;
+      font-size:15px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:40px;
+      margin-top:50px;
+    }
+
+    .stat{
+      text-align:center;
+    }
+
+    .stat h2{
+      font-size:56px;
+      color:#d4af37;
+      margin-bottom:10px;
+    }
+
+    .stat p{
+      color:#bdbdbd;
+    }
+
+    .vision{
+      background:#141414;
+      border-top:1px solid rgba(255,255,255,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+
+    .quote{
+      font-family:'Cormorant Garamond',serif;
+      font-size:48px;
+      line-height:1.4;
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      color:#f1f1f1;
+    }
+
+    .footer{
+      padding:80px 10%;
+      text-align:center;
+      background:#0b0b0b;
+    }
+
+    .footer h2{
+      font-family:'Cormorant Garamond',serif;
+      font-size:52px;
+      margin-bottom:20px;
+    }
+
+    .footer p{
+      color:#bcbcbc;
+      margin-bottom:35px;
+      line-height:1.8;
+    }
+
+    .footer a{
+      color:#d4af37;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:52px;
+      }
+
+      .section-title{
+        font-size:42px;
+      }
+
+      .quote{
+        font-size:34px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Luxury Heritage Hospitality
+      </div>
+
+      <h1>
+        Restoring History.<br>
+        Creating Unforgettable Experiences.
+      </h1>
+
+      <p>
+        Castle Revival Ventures acquires, restores, and transforms historic European castles into world-class destination wedding and luxury hospitality venues.
+      </p>
+
+      <a href="mailto:invest@castlerevival.com" class="btn">
+        Request Investor Deck
+      </a>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      A New Era of Experiential Luxury
+    </h2>
+
+    <p class="section-subtitle">
+      The global luxury traveler no longer seeks ordinary hotels. They seek timeless experiences, emotional storytelling, and destinations that cannot be replicated. Castle Revival Ventures is positioned at the intersection of heritage preservation, luxury tourism, and destination hospitality.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Acquire</h3>
+        <p>
+          Identify historically significant castles and estates across Europe with strong restoration and hospitality potential.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Restore</h3>
+        <p>
+          Blend architectural preservation with modern luxury hospitality standards while preserving cultural authenticity.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Transform</h3>
+        <p>
+          Convert underutilized heritage assets into iconic destination wedding venues, luxury retreats, and premium experiential destinations.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="vision">
+
+    <div class="quote">
+      “Europe’s forgotten castles represent one of the most compelling untapped opportunities in luxury experiential hospitality.”
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      Market Opportunity
+    </h2>
+
+    <p class="section-subtitle">
+      Destination weddings, private luxury experiences, and experiential tourism continue to outperform traditional hospitality segments globally.
+    </p>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h2>$300B+</h2>
+        <p>Global Wedding Industry</p>
+      </div>
+
+      <div class="stat">
+        <h2>$80B+</h2>
+        <p>Luxury Experiential Travel</p>
+      </div>
+
+      <div class="stat">
+        <h2>6</h2>
+        <p>Diversified Revenue Streams</p>
+      </div>
+
+      <div class="stat">
+        <h2>60-70%</h2>
+        <p>Premium Event Margins</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      Revenue Streams
+    </h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Destination Weddings</h3>
+        <p>
+          Exclusive luxury wedding experiences hosted within restored historic castles.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Luxury Hospitality</h3>
+        <p>
+          Premium stays, curated experiences, wellness retreats, and private events.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Corporate Retreats</h3>
+        <p>
+          Executive leadership summits and high-end corporate offsite experiences.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Film & Brand Events</h3>
+        <p>
+          Cinematic heritage venues for productions, luxury campaigns, and global brand activations.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="footer">
+
+    <h2>
+      Building Europe’s Premier Heritage Hospitality Brand
+    </h2>
+
+    <p>
+      We are currently engaging with strategic investors and hospitality partners for our seed funding round.
+    </p>
+
+    <a href="mailto:invest@castlerevival.com">
+      invest@castlerevival.com
+    </a>
+
+  </section>
+
+</body>
+</html>
